@@ -14,3 +14,8 @@ Firefox changes:
 * Use [Tab Counter Plus](https://addons.mozilla.org/en-US/firefox/addon/tab-counter-plus/) instead of right spacer and set up code to hide it when tabs do not overflow.
 
 I also fixed issues with titlebar min/max/close buttons when using non-standard Windows Theme.
+
+Tutorials:
+[How to enable and set up userChrome.css](https://www.reddit.com/r/firefox/wiki/userchrome/)
+[Setting up browser toolbox to live-test your changes](https://firefox-source-docs.mozilla.org/devtools-user/browser_toolbox/index.html)
+Tip: You can find userChrome.css in `Stylesheet Editor` tab and edit it there for testing, or edit live browser elements directly, inline.
