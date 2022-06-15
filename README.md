@@ -1,7 +1,7 @@
 # ThemeMods
 My take on modifying user interfaces of some of my most used software.
 
-
+Firefox changes:
 * Force minimal tab width to be the same as for the pinned tabs
 * Remove 'close tab' button from tabs (I guess they can be displayed when number of tabs are small, but I didn't bother)
 * Swap tab favicon margin for Title's padding to ensure uniform shape
