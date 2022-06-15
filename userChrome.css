@@ -1,0 +1,178 @@
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* FROM: chrome://browser/skin/browser-aero.css */
+
+/* Reset values set by Firefox Engine when non-standart Windows Theme is used */
+/* @media (-moz-windows-default-theme: 0) { */
+.titlebar-button {
+	background-color: transparent !important;
+	stroke: currentColor !important;
+}
+.titlebar-button:hover {
+	stroke: currentColor !important;
+}
+
+/* Change button icons to your favourite custom theme ones by replacing this URLs */
+.titlebar-min {
+list-style-image: url(chrome://browser/skin/window-controls/minimize-themes.svg) !important;
+}
+.titlebar-max {
+list-style-image: url(chrome://browser/skin/window-controls/maximize-themes.svg) !important;
+}
+.titlebar-restore {
+list-style-image: url(chrome://browser/skin/window-controls/restore-themes.svg) !important;
+}
+.titlebar-close {
+list-style-image: url(chrome://browser/skin/window-controls/close-themes.svg) !important;
+}
+
+/* Restore values set by Firefox Engine when standart Windows Theme is used */
+/* @media (-moz-windows-default-theme) { */
+/* BUTTONS */
+#main-menubar > menu[_moz-menuactive="true"] {
+	color: inherit !important;
+}
+
+#main-menubar > menu[_moz-menuactive="true"],
+.titlebar-button:hover {
+	background-color: hsla(0,0%,0%,.12) !important;
+}
+.titlebar-button:hover:active {
+	background-color: hsla(0,0%,0%,.22) !important;
+}
+
+#toolbar-menubar[brighttext] > #menubar-items > #main-menubar > menu[_moz-menuactive="true"],
+toolbar[brighttext] .titlebar-button:not(.titlebar-close):hover {
+	/* background-color: hsla(0,0%,100%,.22) !important; */
+	background-color: rgba(255,255,255,0.06) !important;
+}
+toolbar[brighttext] .titlebar-button:not(.titlebar-close):hover:active {
+	/* background-color: hsla(0,0%,100%,.32) !important; */
+	background-color: rgba(254,254,254,0.04) !important;
+}
+
+.titlebar-close:hover {
+	stroke: white !important;
+	/* background-color: hsl(355,86%,49%) !important; */
+	background-color: rgba(196,43,28,1) !important;
+}
+.titlebar-close:hover:active {
+	/* background-color: hsl(355,82%,69%) !important; */
+	background-color: rgba(191,43,24,0.9) !important;
+}
+
+.titlebar-button:not(:hover) > .toolbarbutton-icon:-moz-window-inactive {
+	opacity: 0.5 !important;
+}
+
+/* TITLEBAR */
+@media (-moz-windows-accent-color-in-titlebar) {
+	:root[sizemode=normal][tabsintitlebar] #navigator-toolbox {
+	border-top: .5px solid -moz-accent-color !important;
+	}
+}
+
+:root[sizemode=normal][tabsintitlebar]:-moz-window-inactive #navigator-toolbox {
+	border-top-color: rgb(57,57,57) !important;
+}
+
+:root[tabsintitlebar] .tab-label:-moz-window-inactive {
+	/* Calculated to match the opacity change of Windows Explorer
+	 titlebar text change for inactive windows. */
+	opacity: .6 !important;
+}
+
+:root[tabsintitlebar] .tab-secondary-label:-moz-window-inactive {
+	opacity: .6 !important;
+}
+
+/* } */
+
+/* ScienceDiscoverer's Custom Tweeks */
+
+/* TO INSERT CUSTOM FAVICON:
+Set the image size to 0x0, add a border of the desired size, and
+uses your image as a background-image to fill:
+
+.bookmark-item[label="BOOKMARK_NAME"] image {
+    width:0!important;
+    height:0!important;
+    padding: 0 0 16px 16px !important;
+    background:url(BASE64_DATA) !important;
+}	*/
+
+/* Just invert the colors of favicon: */
+.tab-icon-image[src*="PHN2ZyB4bW"] {
+	filter: invert(1);
+}
+
+.bookmark-item[label="Free Promotions · SteamDB"] image {
+    filter: invert(1);
+}
+
+/* Fine tune tabs */
+/* initial = 40px it seems; setting initial screws up tabs with no favicons */
+.tabbrowser-tab {
+	/* min-width: initial !important; */
+	min-width: 40px !important;
+}
+
+.tab-content {
+	padding: 0 10px !important;
+}
+
+.tab-close-button {
+	display: none !important;
+}
+
+.tab-throbber:not([pinned]), .tab-icon-pending:not([pinned]), .tab-icon-image:not([pinned]), .tab-sharing-icon-overlay:not([pinned]), .tab-icon-overlay:not([pinned]) {
+	margin-inline-end: 0px !important;
+}
+
+.tab-label-container {
+	padding-left: 5.5px !important;
+}
+
+/* Remove some of the less useful UI elements */
+#alltabs-button {
+	display: none !important;
+}
+
+.titlebar-spacer[type="post-tabs"] {
+	display: none !important;
+}
+
+/* Show tab count only when tabs overflow */
+
+#tabbrowser-tabs:not([overflow]) ~ #tab-counter-plus_loirooriol-browser-action {
+	display: none !important;
+}
+
+#tabbrowser-tabs[overflow] ~ #tab-counter-plus_loirooriol-browser-action {
+	display: -moz-box !important;
+}
+
+/* Remove scroll arrows;
+SRC: https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/hide_tabs_scrollbuttons.css */
+#tabbrowser-tabs:not([movingtab]) {
+	--uc-scroll-visibility: hidden;
+}
+
+#tabbrowser-tabs[overflow] {
+	--uc-scrollbox-margin: -28px;
+}
+
+#scrollbutton-up, #scrollbutton-down, #scrollbutton-up ~ spacer{
+	visibility: var(--uc-scroll-visibility,visible);
+	position: relative;
+	z-index: 1;
+}
+
+.scrollbox-clip {
+	margin-inline: var(--uc-scrollbox-margin,0);
+}
+
+#scrollbutton-up ~ spacer {
+	visibility: hidden !important;
+}
