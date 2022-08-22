@@ -1,0 +1,65 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}]
+@="ScienceDiscoverer"
+"DescriptionID"=dword:00000003
+"System.IsPinnedToNameSpaceTree"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}\DefaultIcon]
+@="C:\\ScienceDiscoverer\\AtomNewAgeBIG.ico,0" ; !!!!!!!!!!!!!!!CUSTOM_CHANGE!!!!!!!!!!!!!!!
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}\InProcServer32]
+@=hex(2):25,00,73,00,79,00,73,00,74,00,65,00,6d,00,72,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,73,00,68,00,\
+  65,00,6c,00,6c,00,33,00,32,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Both"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}\Instance]
+"CLSID"="{0E5AAE11-A475-4c5b-AB00-C66DE400274E}" ; Shell File System Folder
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}\Instance\InitPropertyBag]
+"Attributes"=dword:00000011
+"TargetFolderPath"="C:\\ScienceDiscoverer" ; !!!!!!!!!!!!!!!CUSTOM_CHANGE!!!!!!!!!!!!!!! REPLACE TargetKnownFolder
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}\ShellFolder]
+"Attributes"=dword:f080004d
+"FolderValueFlags"=dword:00000029
+"SortOrderIndex"=dword:00000000
+
+; =============================================================WOW64=========================================
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}]
+@="ScienceDiscoverer" ; !!!!!!!!!!!!!!!CUSTOM_CHANGE!!!!!!!!!!!!!!!
+"DescriptionID"=dword:00000003
+"System.IsPinnedToNameSpaceTree"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}\DefaultIcon]
+@="C:\\ScienceDiscoverer\\AtomNewAgeBIG.ico,0" ; !!!!!!!!!!!!!!!CUSTOM_CHANGE!!!!!!!!!!!!!!!
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}\InProcServer32]
+@=hex(2):25,00,73,00,79,00,73,00,74,00,65,00,6d,00,72,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,73,00,68,00,\
+  65,00,6c,00,6c,00,33,00,32,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Both"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}\Instance]
+"CLSID"="{0E5AAE11-A475-4c5b-AB00-C66DE400274E}" ; Shell File System Folder ; Shell File System Folder
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}\Instance\InitPropertyBag]
+"Attributes"=dword:00000011
+"TargetFolderPath"="C:\\ScienceDiscoverer" ; !!!!!!!!!!!!!!!CUSTOM_CHANGE!!!!!!!!!!!!!!! REPLACE TargetKnownFolder
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Classes\CLSID\{9E134050-221D-49C8-9DB8-9474E2569DA4}\ShellFolder]
+"Attributes"=dword:f080004d
+"FolderValueFlags"=dword:00000029
+"SortOrderIndex"=dword:00000000
+
+; =========================================================END=WOW64=========================================
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{9E134050-221D-49C8-9DB8-9474E2569DA4}]
+
+; =============================================================WOW64=========================================
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{9E134050-221D-49C8-9DB8-9474E2569DA4}]
+
+; =========================================================END=WOW64=========================================
