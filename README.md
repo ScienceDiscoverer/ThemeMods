@@ -22,3 +22,14 @@ Tutorials:
 Tip: You can find userChrome.css in `Stylesheet Editor` tab and edit it there for testing, or edit live browser elements directly, inline.
 
 # Windows
+`ULTIMATE_W10_FIX.REG` - extensive registry tweaks that makes Windows/Explorer UI much more intuitive and usable. Mostly removes useless context menu items and replaces them with the useful ones. But also does many other important tweaks. You can see all list in source code, in the comments.
+
+`ULTIMATE_W10_UNFIX.REG` - reverses changes done by the previous script.
+
+`MY_PC_CUST_SCIENCEDISCOVERER_ADD.REG` - Adds your custom folder to `This PC`, so that you can disable `Quick Access` entirely and use neat custom shell folders in your navigation pane like this:
+
+<img src="readme/cust_fold.png">
+
+To add more folders, just change it name (`@="ScienceDiscoverer"`), icon (`DefaultIcon` key), target folder (`"TargetFolderPath"="C:\\ScienceDiscoverer"`) and generate new GUID, then replace all GUIDs with it. Done.
+
+`MY_PC_CUST_SCIENCEDISCOVERER_DEL.REG` - removes the custom folder
