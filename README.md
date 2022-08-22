@@ -32,8 +32,8 @@ Tip: You can find userChrome.css in `Stylesheet Editor` tab and edit it there fo
 
 To add more folders, just change it name (`@="ScienceDiscoverer"`), icon (`DefaultIcon` key), target folder (`"TargetFolderPath"="C:\\ScienceDiscoverer"`) and generate new GUID, then replace all GUIDs with it. Done.
 
-`MY_PC_CUST_SCIENCEDISCOVERER_DEL.REG` - removes the custom folder
+`MY_PC_CUST_SCIENCEDISCOVERER_DEL.REG` - removes the custom folder.
 
 `MY_PC_DIRS_ALL_DEL.REG` - removes all standard This PC folders (Pictures, Videos, Documents etc.). It just removes them from This PC, but not from physical storage.
 
-`MY_PC_DIRS_ALL_RESTORE.REG` - restores all standard This PC folders
+`MY_PC_DIRS_ALL_RESTORE.REG` - restores all standard This PC folders.
