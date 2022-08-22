@@ -1,4 +1,4 @@
-# ThemeMods
+# Firefox
 My take on modifying user interfaces of some of my most used software.
 
 Firefox changes:
@@ -20,3 +20,5 @@ Tutorials:
 * [Setting up browser toolbox to live-test your changes](https://firefox-source-docs.mozilla.org/devtools-user/browser_toolbox/index.html)
 
 Tip: You can find userChrome.css in `Stylesheet Editor` tab and edit it there for testing, or edit live browser elements directly, inline.
+
+# Windows
