@@ -1,0 +1,229 @@
+/* Mozilla Tweaks */
+@-moz-document
+domain(mozilla.org) {
+	body, #main-wrapper {
+		color: #F1F2F3 !important;
+		background-color: #1F1F1F !important;
+	}
+	
+	.Card-contents {
+		background-color: #1F1F1F !important;
+	}
+	
+	.Page-content {
+		background: #171717 !important;
+	}
+	
+	.Card-header, .Card-footer {
+		background: #2D2D2D !important;
+	}
+	
+	.CardList ul > li {
+		background: #1F1F1F !important;
+	}
+	
+	.SearchResult-link,
+	.SearchResult-link:active,
+	.SearchResult-link:link,
+	.SearchResult-link:visited {
+		color: #F1F2F3 !important;
+	}
+	
+	.AddonRecommendations.AddonsCard--horizontal ul.AddonsCard-list .SearchResult:hover {
+		background-color: #2D2D2D !important;
+	}
+	
+	.PromotedBadge-label--recommended {
+		color: #d95200 !important;
+	}
+	
+	.MetadataCard {
+		background-color: #2D2D2D !important;
+	}
+	
+	.AddonMeta .MetadataCard-content a.AddonMeta-reviews-content-link, .AddonMeta .MetadataCard-content a.AddonMeta-reviews-content-link:link, .AddonMeta .MetadataCard-content a.AddonMeta-reviews-content-link:visited, .AddonMeta .MetadataCard-title a.AddonMeta-reviews-content-link, .AddonMeta .MetadataCard-title a.AddonMeta-reviews-content-link:link, .AddonMeta .MetadataCard-title a.AddonMeta-reviews-content-link:visited {
+		color: #F1F2F3 !important;
+	}
+	
+	.Button--neutral, .Button--neutral:link {
+		color: #F1F2F3 !important;
+		background: #2D2D2D !important;
+	}
+	
+	h1, h2, .AddonTitle {
+		color: #F1F2F3 !important;
+	}
+	
+	h3 {
+		color: #0E59EE !important;
+	}
+	
+	[dir="ltr"] .PermissionsCard-list--optional li .Icon, [dir="ltr"] .PermissionsCard-list--required li .Icon {
+		filter: invert(1) !important;
+	}
+	
+	.ShowMoreCard-contents::after {
+		background: linear-gradient(hsla(0, 0%, 0%, 0), #1F1F1F) !important;
+	}
+	
+	input, textarea {
+		color: #F1F2F3 !important;
+		background: #1A1A1A !important;
+	}
+	
+	.AddonReviewManager .DismissibleTextForm-formFooter a, .AddonReviewManager .DismissibleTextForm-formFooter a:link, .AddonReviewManager .DismissibleTextForm-formFooter a:visited {
+		color: #808080 !important;
+	}
+	
+	[dir="ltr"] .UserProfile-tags .Icon {
+		filter: invert(1);
+	}
+	
+	.developer-hub #homepage h2, .developer-hub header h2, .primary h2, h1, hgroup h2.addon, hgroup h2.collection {
+		color: #F1F2F3 !important;
+	}
+	
+	#footer {
+		background-color: #1F1F1F !important;
+		background-image: linear-gradient(to bottom,#373737 0,#282828 123px,#0C99D5 123px,#0C99D5 200px,#1C1C1C 200px,rgba(12,153,213,0) 400px) !important;
+		color: #F1F2F3 !important;
+	}
+	
+	#edit-addon h3 a {
+		background: #004db3 !important;
+	}
+	
+	a.button.prominent:active, a.button.prominent:focus, a.button.prominent:hover, a.button.prominent:link, a.button.prominent:visited, button.prominent, input[type="button"].prominent, input[type="submit"].prominent {
+		background: #004db3 !important;
+	}
+	
+	.addon-submission-process .tip, .devhub-form .tip, a.remove, span.remove, ul.errorlist li span.tip {
+		background-color: #535353 !important;
+	}
+	
+	.edit_with_prefix span, .edit_with_suffix span {
+		background: #1A1A1A !important;
+	}
+	
+	.edit-addon-details, form .char-count b {
+		color: #A2A2A2 !important;
+	}
+	
+	.primary, .secondary {
+		background: #1F1F1F !important;
+	}
+	
+	.devhub-form .item {
+		background: #202020 !important;
+		border: 1px solid #003F82;
+	}
+	
+	.highlight {
+		background-color: #00162B !important;
+	}
+	
+	.secondary ul.refinements li a {
+		color: #2777EE !important;
+	}
+	
+	.secondary .addon-status .addon-details li.addon-listed-status {
+		color: #F1F2F3 !important;
+	}
+	
+	.secondary .addon-status {
+		background: #171717 !important;
+		color: #F1F2F3 !important;
+	}
+	
+	.status-lite-nom i, .status-nominated b, .status-unreviewed b {
+		color: #05A8CE !important;
+	}
+	
+	.listing-footer, .tab-wrapper .fm-control {
+		background-color: #171717 !important;
+	}
+	
+	#file-list .preview {
+		background-color: #1F1F1F !important;
+	}
+	
+	#icons_default {
+		background-color: #1F1F1F !important;
+	}
+	
+	.dashboard .listing .item {
+		background: #111 !important;
+	}
+	
+	.tip {
+		background-color: #575757 !important;
+	}
+	
+	.dashboard .listing .item {
+		color: #CECECE;
+	}
+	
+	.submission-type-tabs a {
+		background: #111 !important;
+		border: 1px solid #393939 !important;
+	}
+	
+	.submission-type-tabs a.active {
+		background-image: -webkit-gradient(linear,left bottom,left top,from(#fff),to(#fcfdfe)) !important;
+		background-image: linear-gradient(#2f2f2f,#0d0d0d) !important;
+	}
+	
+	.install-note, .modal, .popup {
+		background: #1F1F1F !important;
+	}
+	
+	.modal-delete, .popup.error {
+		color: #DFDFDF !important;
+	}
+	
+	.restyle .notification-box, .restyle .site-balloon {
+		background: #111 !important;
+	}
+	
+	.Notice-generic, .Notice-genericWarning {
+		background-color: #111 !important;
+		color: #F1F2F3 !important;
+	}
+	
+	.Notice-genericWarning .Notice-icon {
+		filter: invert(1) !important;
+	}
+	
+	.Notice-generic .Notice-button.Button--micro:not(.Button--disabled):hover, .Notice-generic .Notice-button:not(.Button--disabled):hover, .Notice-genericWarning .Notice-button.Button--micro:not(.Button--disabled):hover, .Notice-genericWarning .Notice-button:not(.Button--disabled):hover {
+		background: rgba(53, 53, 53, 0.2) !important;
+	}
+	
+	.Notice-generic .Notice-button.Button--micro, .Notice-generic .Notice-button.Button--micro:link, .Notice-generic .Notice-button:link.Button--micro, .Notice-generic .Notice-button:link.Button--micro:link, .Notice-genericWarning .Notice-button.Button--micro, .Notice-genericWarning .Notice-button.Button--micro:link, .Notice-genericWarning .Notice-button:link.Button--micro, .Notice-genericWarning .Notice-button:link.Button--micro:link {
+		background: #1F1F1F !important;
+		color: #F1F2F3 !important;
+	}
+	
+	.Notice-error {
+		background-color: #A40025 !important;
+	}
+	
+	.SecondaryHero-module {
+		background-color: #2D2D2D !important;
+	}
+	
+	.SecondaryHero {
+		color: #F1F2F3 !important;
+	}
+	
+	.SecondaryHero-module-icon {
+		filter: invert(1) !important;
+	}
+	
+	.dashboard .listing .item {
+		color: #F1F2F3 !important;
+	}
+	
+	.status-admin-disabled b, .status-disabled b, .status-incomplete b, .status-purgatory b {
+		color: #d51100 !important;
+	}
+}
